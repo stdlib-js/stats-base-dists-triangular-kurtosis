@@ -74,7 +74,9 @@ If no recognized module system is present, access bundle contents via the global
 ```html
 <script type="text/javascript">
 (function () {
+(function () {
     window.kurtosis;
+})();
 })();
 </script>
 ```
@@ -148,6 +150,7 @@ y = kurtosis( 0.0, -1.0, 0.5 );
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-triangular-kurtosis@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
+(function () {
 
 var a;
 var b;
@@ -163,6 +166,7 @@ for ( i = 0; i < 10; i++ ) {
     console.log( 'a: %d, b: %d, c: %d, Kurt(X;a,b,c): %d', a.toFixed( 4 ), b.toFixed( 4 ), c.toFixed( 4 ), v.toFixed( 4 ) );
 }
 
+})();
 })();
 </script>
 </body>
