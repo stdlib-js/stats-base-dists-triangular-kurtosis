@@ -67,7 +67,7 @@ The [excess kurtosis][kurtosis] for a [triangular][triangular-distribution] rand
 ## Usage
 
 ```javascript
-import kurtosis from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-triangular-kurtosis@deno/mod.js';
+import kurtosis from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-triangular-kurtosis@v0.2.2-deno/mod.js';
 ```
 
 #### kurtosis( a, b, c )
@@ -133,7 +133,7 @@ y = kurtosis( 0.0, -1.0, 0.5 );
 
 ```javascript
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
-import kurtosis from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-triangular-kurtosis@deno/mod.js';
+import kurtosis from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-triangular-kurtosis@v0.2.2-deno/mod.js';
 
 var a;
 var b;
