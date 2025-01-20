@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-12-26)
+## Unreleased (2025-01-20)
 
 <section class="features">
 
@@ -34,6 +34,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`f75a0ce`](https://github.com/stdlib-js/stdlib/commit/f75a0cef6a3112b166dba04c13bada9763cec350) - **chore:** use excess kurtosis consistently _(by Philipp Burckhardt)_
 -   [`8a76708`](https://github.com/stdlib-js/stdlib/commit/8a767088c956f13116988ee8967e9e4f74c0f564) - **feat:** add C implementation for `stats/base/dists/triangular/kurtosis` [(#4256)](https://github.com/stdlib-js/stdlib/pull/4256) _(by Prashant Kumar Yadav)_
 
 </details>
@@ -46,8 +47,9 @@ This release closes the following issue:
 
 ### Contributors
 
-A total of 1 person contributed to this release. Thank you to this contributor:
+A total of 2 people contributed to this release. Thank you to the following contributors:
 
+-   Philipp Burckhardt
 -   Prashant Kumar Yadav
 
 </section>
