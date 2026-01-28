@@ -67,6 +67,11 @@ The [excess kurtosis][kurtosis] for a [triangular][triangular-distribution] rand
 ## Usage
 
 ```javascript
+import kurtosis from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-triangular-kurtosis@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/stats-base-dists-triangular-kurtosis/tags). For example,
+
+```javascript
 import kurtosis from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-triangular-kurtosis@v0.3.0-esm/index.mjs';
 ```
 
@@ -138,7 +143,7 @@ y = kurtosis( 0.0, -1.0, 0.5 );
 <script type="module">
 
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
-import kurtosis from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-triangular-kurtosis@v0.3.0-esm/index.mjs';
+import kurtosis from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-triangular-kurtosis@esm/index.mjs';
 
 var a;
 var b;
