@@ -60,32 +60,38 @@ The [excess kurtosis][kurtosis] for a [triangular][triangular-distribution] rand
 
 <!-- Package usage documentation. -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/stats-base-dists-triangular-kurtosis
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
+To use in Observable,
+
 ```javascript
-var kurtosis = require( '@stdlib/stats-base-dists-triangular-kurtosis' );
+kurtosis = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-triangular-kurtosis@umd/browser.js' )
+```
+
+To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
+
+```javascript
+var kurtosis = require( 'path/to/vendor/umd/stats-base-dists-triangular-kurtosis/index.js' )
+```
+
+To include the bundle in a webpage,
+
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-triangular-kurtosis@umd/browser.js"></script>
+```
+
+If no recognized module system is present, access bundle contents via the global scope:
+
+```html
+<script type="text/javascript">
+(function () {
+    window.kurtosis;
+})();
+</script>
 ```
 
 #### kurtosis( a, b, c )
@@ -149,9 +155,14 @@ y = kurtosis( 0.0, -1.0, 0.5 );
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var randu = require( '@stdlib/random-base-randu' );
-var kurtosis = require( '@stdlib/stats-base-dists-triangular-kurtosis' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-triangular-kurtosis@umd/browser.js"></script>
+<script type="text/javascript">
+(function () {
 
 var a;
 var b;
@@ -166,6 +177,11 @@ for ( i = 0; i < 10; i++ ) {
     v = kurtosis( a, b, c );
     console.log( 'a: %d, b: %d, c: %d, Kurt(X;a,b,c): %d', a.toFixed( 4 ), b.toFixed( 4 ), c.toFixed( 4 ), v.toFixed( 4 ) );
 }
+
+})();
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -174,101 +190,7 @@ for ( i = 0; i < 10; i++ ) {
 
 <!-- C interface documentation. -->
 
-* * *
 
-<section class="c">
-
-## C APIs
-
-<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
-
-<section class="intro">
-
-</section>
-
-<!-- /.intro -->
-
-<!-- C usage documentation. -->
-
-<section class="usage">
-
-### Usage
-
-```c
-#include "stdlib/stats/base/dists/triangular/kurtosis.h"
-```
-
-#### stdlib_base_dists_triangular_kurtosis( a, b, c )
-
-Returns the [excess kurtosis][kurtosis] of a [triangular][triangular-distribution] distribution with minimum support `a`, maximum support`b`, and mode `c`.
-
-```c
-double out = stdlib_base_dists_triangular_kurtosis( 0.0, 1.0, 0.8 );
-// returns -0.6
-```
-
-The function accepts the following arguments:
-
--   **a**: `[in] double` minimum support.
--   **b**: `[in] double` maximum support.
--   **c**: `[in] double` mode.
-
-```c
-double stdlib_base_dists_triangular_kurtosis( const double a, const double b, const double c );
-```
-
-</section>
-
-<!-- /.usage -->
-
-<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
-
-<section class="notes">
-
-</section>
-
-<!-- /.notes -->
-
-<!-- C API usage examples. -->
-
-<section class="examples">
-
-### Examples
-
-```c
-#include "stdlib/stats/base/dists/triangular/kurtosis.h"
-#include <stdlib.h>
-#include <stdio.h>
-
-static double random_uniform( const double min, const double max ) {
-    double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
-    return min + ( v*(max-min) );
-}
-
-int main( void ) {
-    double a;
-    double b;
-    double c;
-    double v;
-    int i;
-
-    for ( i = 0; i < 25; i++ ) {
-        a = random_uniform( 0.0, 10.0 );
-        b = random_uniform( a, a+10.0 );
-        c = random_uniform( a, b );
-        v = stdlib_base_dists_triangular_kurtosis( a, b, c );
-        printf( "a: %lf, b: %lf, c: %lf, Kurt(X;a,b,c): %lf\n", a, b, c, v );
-    }
-}
-```
-
-</section>
-
-<!-- /.examples -->
-
-</section>
-
-<!-- /.c -->
 
 <!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
