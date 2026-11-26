@@ -4,7 +4,19 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-10-16)
+## Unreleased (2026-11-26)
+
+<section class="issues">
+
+### Closed Issues
+
+This release closes the following issue:
+
+[#4989](https://github.com/stdlib-js/stdlib/issues/4989)
+
+</section>
+
+<!-- /.issues -->
 
 <section class="commits">
 
@@ -12,6 +24,7 @@
 
 <details>
 
+-   [`f008bf3`](https://github.com/stdlib-js/stdlib/commit/f008bf3988c36006ff71feacc7cfe4af94c149ae) - **bench:** refactor random number generation in `stats/base/dists/triangular` [(#16644)](https://github.com/stdlib-js/stdlib/pull/16644) _(by Parth Dembla, Athan Reines)_
 -   [`3bf5a14`](https://github.com/stdlib-js/stdlib/commit/3bf5a14ee88949be8e9b399338a5c63df3e5d058) - **test:** migrate `stats/base/dists/triangular/kurtosis` to ULP-based assertions [(#14975)](https://github.com/stdlib-js/stdlib/pull/14975) _(by Athan Reines)_
 -   [`f38e8a7`](https://github.com/stdlib-js/stdlib/commit/f38e8a7b433e0e9888eb57c83f4374073089ad85) - **docs:** clean-up parameters in Julia fixtures scripts _(by Philipp Burckhardt)_
 
@@ -25,9 +38,10 @@
 
 ### Contributors
 
-A total of 2 people contributed to this release. Thank you to the following contributors:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
+-   Parth Dembla
 -   Philipp Burckhardt
 
 </section>
